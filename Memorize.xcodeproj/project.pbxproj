@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E3380B32C9E9FBC00FFF0BE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380B22C9E9FBC00FFF0BE /* Card.swift */; };
+		8E3380B62C9EEE2400FFF0BE /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380B52C9EEE2400FFF0BE /* Grid.swift */; };
+		8E3380B92C9EEE6900FFF0BE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380B82C9EEE6900FFF0BE /* StringExtension.swift */; };
+		8E3380BB2C9EF4E500FFF0BE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380BA2C9EF4E500FFF0BE /* GameView.swift */; };
+		8E3380BD2C9F0E6B00FFF0BE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380BC2C9F0E6B00FFF0BE /* SettingsView.swift */; };
+		8E3380C02C9F146200FFF0BE /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380BF2C9F146200FFF0BE /* Preference.swift */; };
+		8E3380C22C9F164B00FFF0BE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380C12C9F164B00FFF0BE /* Theme.swift */; };
+		8E3380C42C9F4A5500FFF0BE /* ThemePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */; };
+		8E3380C62C9F4BDE00FFF0BE /* GridPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */; };
 		8E6EE8852C9E68A9007CD530 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6EE8842C9E68A9007CD530 /* MemorizeApp.swift */; };
 		8E6EE8872C9E68A9007CD530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6EE8862C9E68A9007CD530 /* ContentView.swift */; };
 		8E6EE8892C9E68AD007CD530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6EE8882C9E68AD007CD530 /* Assets.xcassets */; };
@@ -34,6 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E3380B22C9E9FBC00FFF0BE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8E3380B52C9EEE2400FFF0BE /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		8E3380B82C9EEE6900FFF0BE /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8E3380BA2C9EF4E500FFF0BE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		8E3380BC2C9F0E6B00FFF0BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8E3380BF2C9F146200FFF0BE /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		8E3380C12C9F164B00FFF0BE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePreference.swift; sourceTree = "<group>"; };
+		8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPreference.swift; sourceTree = "<group>"; };
 		8E6EE8812C9E68A9007CD530 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6EE8842C9E68A9007CD530 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		8E6EE8862C9E68A9007CD530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +89,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3380B12C9E9E8C00FFF0BE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380BA2C9EF4E500FFF0BE /* GameView.swift */,
+				8E3380BC2C9F0E6B00FFF0BE /* SettingsView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		8E3380B42C9EC3DF00FFF0BE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380B22C9E9FBC00FFF0BE /* Card.swift */,
+				8E3380B52C9EEE2400FFF0BE /* Grid.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8E3380B72C9EEE3400FFF0BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380B82C9EEE6900FFF0BE /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E3380BE2C9F140A00FFF0BE /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380BF2C9F146200FFF0BE /* Preference.swift */,
+				8E3380C12C9F164B00FFF0BE /* Theme.swift */,
+				8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */,
+				8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		8E6EE8782C9E68A9007CD530 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +149,10 @@
 		8E6EE8832C9E68A9007CD530 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				8E3380BE2C9F140A00FFF0BE /* Preferences */,
+				8E3380B72C9EEE3400FFF0BE /* Extensions */,
+				8E3380B42C9EC3DF00FFF0BE /* Components */,
+				8E3380B12C9E9E8C00FFF0BE /* Pages */,
 				8E6EE8842C9E68A9007CD530 /* MemorizeApp.swift */,
 				8E6EE8862C9E68A9007CD530 /* ContentView.swift */,
 				8E6EE8882C9E68AD007CD530 /* Assets.xcassets */,
@@ -257,8 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3380C22C9F164B00FFF0BE /* Theme.swift in Sources */,
+				8E3380BD2C9F0E6B00FFF0BE /* SettingsView.swift in Sources */,
 				8E6EE8872C9E68A9007CD530 /* ContentView.swift in Sources */,
+				8E3380C02C9F146200FFF0BE /* Preference.swift in Sources */,
+				8E3380C42C9F4A5500FFF0BE /* ThemePreference.swift in Sources */,
+				8E3380B32C9E9FBC00FFF0BE /* Card.swift in Sources */,
+				8E3380C62C9F4BDE00FFF0BE /* GridPreference.swift in Sources */,
+				8E3380B92C9EEE6900FFF0BE /* StringExtension.swift in Sources */,
 				8E6EE8852C9E68A9007CD530 /* MemorizeApp.swift in Sources */,
+				8E3380BB2C9EF4E500FFF0BE /* GameView.swift in Sources */,
+				8E3380B62C9EEE2400FFF0BE /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +498,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +528,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
