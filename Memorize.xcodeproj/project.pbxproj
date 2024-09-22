@@ -16,6 +16,13 @@
 		8E3380C22C9F164B00FFF0BE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380C12C9F164B00FFF0BE /* Theme.swift */; };
 		8E3380C42C9F4A5500FFF0BE /* ThemePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */; };
 		8E3380C62C9F4BDE00FFF0BE /* GridPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */; };
+		8E4A6AD62C9FB8250038EEBE /* ComplexityPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6AD52C9FB8250038EEBE /* ComplexityPreset.swift */; };
+		8E4A6ADA2CA024980038EEBE /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6AD92CA024980038EEBE /* CardInfo.swift */; };
+		8E4A6ADC2CA073F60038EEBE /* WinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6ADB2CA073F60038EEBE /* WinScreen.swift */; };
+		8E4A6ADE2CA07B3F0038EEBE /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6ADD2CA07B3F0038EEBE /* RulesView.swift */; };
+		8E4A6AE42CA07FDB0038EEBE /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6AE32CA07FDB0038EEBE /* CardBack.swift */; };
+		8E4A6AE62CA0800E0038EEBE /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6AE52CA0800E0038EEBE /* CardFront.swift */; };
+		8E4A6AE82CA0803C0038EEBE /* SpaceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6AE72CA0803C0038EEBE /* SpaceCard.swift */; };
 		8E6EE8852C9E68A9007CD530 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6EE8842C9E68A9007CD530 /* MemorizeApp.swift */; };
 		8E6EE8872C9E68A9007CD530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6EE8862C9E68A9007CD530 /* ContentView.swift */; };
 		8E6EE8892C9E68AD007CD530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6EE8882C9E68AD007CD530 /* Assets.xcassets */; };
@@ -52,6 +59,13 @@
 		8E3380C12C9F164B00FFF0BE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePreference.swift; sourceTree = "<group>"; };
 		8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPreference.swift; sourceTree = "<group>"; };
+		8E4A6AD52C9FB8250038EEBE /* ComplexityPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexityPreset.swift; sourceTree = "<group>"; };
+		8E4A6AD92CA024980038EEBE /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
+		8E4A6ADB2CA073F60038EEBE /* WinScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScreen.swift; sourceTree = "<group>"; };
+		8E4A6ADD2CA07B3F0038EEBE /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		8E4A6AE32CA07FDB0038EEBE /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
+		8E4A6AE52CA0800E0038EEBE /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		8E4A6AE72CA0803C0038EEBE /* SpaceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCard.swift; sourceTree = "<group>"; };
 		8E6EE8812C9E68A9007CD530 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6EE8842C9E68A9007CD530 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		8E6EE8862C9E68A9007CD530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +108,7 @@
 			children = (
 				8E3380BA2C9EF4E500FFF0BE /* GameView.swift */,
 				8E3380BC2C9F0E6B00FFF0BE /* SettingsView.swift */,
+				8E4A6ADD2CA07B3F0038EEBE /* RulesView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -101,8 +116,9 @@
 		8E3380B42C9EC3DF00FFF0BE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				8E3380B22C9E9FBC00FFF0BE /* Card.swift */,
+				8E4A6AE12CA07F7F0038EEBE /* Card */,
 				8E3380B52C9EEE2400FFF0BE /* Grid.swift */,
+				8E4A6ADB2CA073F60038EEBE /* WinScreen.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -118,12 +134,41 @@
 		8E3380BE2C9F140A00FFF0BE /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				8E4A6AE02CA07F520038EEBE /* Grid */,
+				8E4A6ADF2CA07F400038EEBE /* Theme */,
 				8E3380BF2C9F146200FFF0BE /* Preference.swift */,
-				8E3380C12C9F164B00FFF0BE /* Theme.swift */,
-				8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */,
-				8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		8E4A6ADF2CA07F400038EEBE /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380C12C9F164B00FFF0BE /* Theme.swift */,
+				8E3380C32C9F4A5500FFF0BE /* ThemePreference.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		8E4A6AE02CA07F520038EEBE /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380C52C9F4BDE00FFF0BE /* GridPreference.swift */,
+				8E4A6AD52C9FB8250038EEBE /* ComplexityPreset.swift */,
+				8E4A6AD92CA024980038EEBE /* CardInfo.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		8E4A6AE12CA07F7F0038EEBE /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				8E3380B22C9E9FBC00FFF0BE /* Card.swift */,
+				8E4A6AE32CA07FDB0038EEBE /* CardBack.swift */,
+				8E4A6AE52CA0800E0038EEBE /* CardFront.swift */,
+				8E4A6AE72CA0803C0038EEBE /* SpaceCard.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		8E6EE8782C9E68A9007CD530 = {
@@ -316,17 +361,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4A6AE82CA0803C0038EEBE /* SpaceCard.swift in Sources */,
 				8E3380C22C9F164B00FFF0BE /* Theme.swift in Sources */,
 				8E3380BD2C9F0E6B00FFF0BE /* SettingsView.swift in Sources */,
 				8E6EE8872C9E68A9007CD530 /* ContentView.swift in Sources */,
+				8E4A6AE62CA0800E0038EEBE /* CardFront.swift in Sources */,
 				8E3380C02C9F146200FFF0BE /* Preference.swift in Sources */,
+				8E4A6AE42CA07FDB0038EEBE /* CardBack.swift in Sources */,
 				8E3380C42C9F4A5500FFF0BE /* ThemePreference.swift in Sources */,
 				8E3380B32C9E9FBC00FFF0BE /* Card.swift in Sources */,
+				8E4A6AD62C9FB8250038EEBE /* ComplexityPreset.swift in Sources */,
 				8E3380C62C9F4BDE00FFF0BE /* GridPreference.swift in Sources */,
 				8E3380B92C9EEE6900FFF0BE /* StringExtension.swift in Sources */,
 				8E6EE8852C9E68A9007CD530 /* MemorizeApp.swift in Sources */,
+				8E4A6ADC2CA073F60038EEBE /* WinScreen.swift in Sources */,
+				8E4A6ADE2CA07B3F0038EEBE /* RulesView.swift in Sources */,
 				8E3380BB2C9EF4E500FFF0BE /* GameView.swift in Sources */,
 				8E3380B62C9EEE2400FFF0BE /* Grid.swift in Sources */,
+				8E4A6ADA2CA024980038EEBE /* CardInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        GameView(preferences: Preference())
+        NavigationView{
+            GameView(preferences: Preference())
+        }
     }
 }
 
