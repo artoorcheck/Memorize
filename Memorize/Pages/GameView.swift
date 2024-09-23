@@ -24,9 +24,7 @@ struct GameView: View {
                 if #available(iOS 15.0, *) {
                     if preferences.showHintButton && !preferences.gameOver {
                         Button("💡") {
-                            Task{
-                                await showAllCards()
-                            }
+                            showAllCards()
                         }
                         .buttonStyle(.borderedProminent)
                         .tint(Color.green)
@@ -53,19 +51,22 @@ struct GameView: View {
         .background(preferences.backGroundColor)
     }
     
-    private func showAllCards() async {
+    private func showAllCards() {
+        print("showAllCards")
         if preferences.showHintButton {
             preferences.showHintButton = false
             preferences.cardSequence.forEach{elem in
                 if elem.cardState == .faceDown {
                     elem.cardState = .faceUp
+                    print(elem.icon)
                 }
             }
             preferences.score -= 5
-            try? await Task.sleep(nanoseconds: 7_000_000_000)
-            preferences.cardSequence.forEach{elem in
-                if elem.cardState == .faceUp {
-                    elem.cardState = .faceDown
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+                preferences.cardSequence.forEach{elem in
+                    if elem.cardState == .faceUp {
+                        elem.cardState = .faceDown
+                    }
                 }
             }
         }

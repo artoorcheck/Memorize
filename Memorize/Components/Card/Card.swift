@@ -5,15 +5,23 @@ struct Card: View {
     @State var backDegree = 0.0
     @State var frontDegree = -90.0
     @ObservedObject var cardInfo: CardInfo
-
+    
     let durationAndDelay : CGFloat = 0.3
     @ObservedObject var preferences: Preference
     @Binding var increment: Int
     
+    init(cardInfo: CardInfo, preferences: Preference, increment: Binding<Int>) {
+        if cardInfo.cardState == .faceUp {
+            self.backDegree = 90.0
+            self.frontDegree = 0.0
+        }
+        self.cardInfo = cardInfo
+        self.preferences = preferences
+        self._increment = increment
+    }
+    
     func flipFaceUpCard () {
         cardInfo.cardState = .faceUp
-            
-        increment += 1
         withAnimation(.linear(duration: durationAndDelay)) {
             backDegree = 90
         }
@@ -23,9 +31,10 @@ struct Card: View {
     }
     
     func flipUserFaceUp(){
-        if(increment > 1) {
+        if increment > 1 || cardInfo.cardState == .faceUp {
             return
         }
+        increment += 1
         flipFaceUpCard()
     }
     
